@@ -58,7 +58,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           script: |
-            docker pull ghcr.io/qw100901001/ledger:latest
+            docker pull ghcr.io/qw100901001/ledger:main
             docker stop ledger || true
             docker rm ledger || true
-            docker run -d --name ledger -p 8080:8080 ghcr.io/qw100901001/ledger:latest
+            docker run -d --name ledger -p 8080:8080 ghcr.io/qw100901001/ledger:main

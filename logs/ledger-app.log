@@ -97,3 +97,4 @@
 2026-10-04 20:09:03 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c6c24f
 2026-10-04 20:09:04 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
 2026-10-04 20:09:04 INFO  org.soso.ledger.LedgerApplication - Started LedgerApplication in 4.846 seconds (process running for 5.921)
+2026-10-04 23:22:42 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m7s144ms963µs700ns).
