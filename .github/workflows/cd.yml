@@ -61,4 +61,7 @@ jobs:
             docker pull ghcr.io/qw100901001/ledger:main
             docker stop ledger || true
             docker rm ledger || true
-            docker run -d --name ledger -p 8080:8080 ghcr.io/qw100901001/ledger:main
+            docker run -d --name ledger \
+            -p 8080:8080 \
+            --env-file /ledger/.env \
+            ghcr.io/qw100901001/ledger:main
