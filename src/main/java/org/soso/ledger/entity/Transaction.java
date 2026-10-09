@@ -3,6 +3,7 @@ package org.soso.ledger.entity;
 import com.baomidou.mybatisplus.annotation.*;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import com.baomidou.mybatisplus.annotation.Version;
 
 import lombok.Data;
 
@@ -26,4 +27,7 @@ public class Transaction {
     private String requestId;
     @TableField(fill = FieldFill.INSERT)
     private LocalDateTime createdAt;
+
+    @Version
+    private Integer version; // 数据库记得加一个 version 字段，默认值 1
 }

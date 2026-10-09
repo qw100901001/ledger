@@ -13,7 +13,6 @@ import org.soso.ledger.service.LedgerMemberService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.beans.Transient;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -78,19 +77,28 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     @Transactional(rollbackFor = Exception.class)
     public void updateCategory(Long ledgerId, Long userId,Long categoryId,  CategoryUpdateRequest request) {
-        // ① 查分类是否存在
-        Category category = categoryMapper.selectById(categoryId);
-        if (category == null) {
-            throw new BusinessException(404, "该分类不存在");
-        }
-        // ② 关键校验：确保这个分类真的属于路径里传的这个账本！
-        if (!category.getLedgerId().equals(ledgerId)) {
-            throw new BusinessException(500, "非法操作：该分类不属于当前账本");
-        }
         // ③ 成员校验：确保当前用户在这个账本里有权限
         ledgerMemberService.checkMembership(ledgerId, userId);
+//        // ① 查分类是否存在
+//        Category category = categoryMapper.selectById(categoryId);
+//        if (category == null) {
+//            throw new BusinessException(404, "该分类不存在");
+//        }
+//        // ② 关键校验：确保这个分类真的属于路径里传的这个账本！
+//        if (!category.getLedgerId().equals(ledgerId)) {
+//            throw new BusinessException(500, "非法操作：该分类不属于当前账本");
+//        }
+
+
+        // ② 【核心：悲观锁查询】
+        // 此时数据库会锁住这一行，其他并发请求如果也想修改这个分类，会在这里阻塞等待
+        Category category = categoryMapper.selectByIdForUpdate(categoryId, ledgerId);
+        // ③ 查分类是否存在
+        if (category == null) {
+            // 由于 SQL 里带了 ledgerId，如果传错了账本ID，这里也会直接查不到
+            throw new BusinessException(404, "该分类不存在或不属于当前账本");
+        }
         category.setName(request.getName());
-        category.setType(request.getType());
         category.setType(request.getType());
         if (request.getSortOrder() != null) {
             category.setSortOrder(request.getSortOrder());

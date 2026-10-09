@@ -107,7 +107,10 @@ public class TransactionServiceImpl implements TransactionService {
         transaction.setRemark(request.getRemark());
 
         // ⑥ 执行更新
-        transactionMapper.updateById(transaction);
+        int rows = transactionMapper.updateById(transaction);
+        if (rows == 0) {
+            throw new BusinessException(409, "该流水已被其他人修改，请刷新后重试");
+        }
 
     }
 
@@ -121,7 +124,7 @@ public class TransactionServiceImpl implements TransactionService {
         Transaction transaction = transactionMapper.selectById(transactionId);
         // 如果流水不存在，直接抛出异常
         if (transaction == null) {
-            throw new BusinessException(404,"该流水不存在或已被删除");
+            throw new BusinessException(404, "该流水不存在或已被删除");
             // 建议替换为你项目中的自定义异常，如 BusinessException
         }
         if (!transaction.getLedgerId().equals(ledgerId)) {
@@ -130,7 +133,7 @@ public class TransactionServiceImpl implements TransactionService {
         // 执行真删除（物理删除）
         int rows = transactionMapper.deleteById(transactionId);
         if (rows == 0) {
-            throw new BusinessException(400,"删除失败");
+            throw new BusinessException(400, "删除失败");
         }
     }
 
