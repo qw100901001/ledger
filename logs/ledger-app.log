@@ -1,100 +1,30 @@
-2026-10-04 18:14:07 INFO  org.soso.ledger.LedgerApplication - Starting LedgerApplication using Java 17.0.20.1 with PID 28892 (D:\so-project\ledger\build\classes\java\main started by qw100 in D:\so-project\ledger)
-2026-10-04 18:14:07 DEBUG org.soso.ledger.LedgerApplication - Running with Spring Boot v4.0.8, Spring v7.0.9
-2026-10-04 18:14:07 INFO  org.soso.ledger.LedgerApplication - The following 1 profile is active: "dev"
-2026-10-04 18:14:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-04 18:14:07 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-04 18:14:08 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 17 ms. Found 0 Redis repository interfaces.
-2026-10-04 18:14:08 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-10-04 18:14:08 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-04 18:14:08 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-10-04 18:14:08 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1630 ms
-2026-10-04 18:14:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-04 18:14:09 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3eec8583
-2026-10-04 18:14:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-04 18:14:10 INFO  o.s.b.w.a.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2026-10-04 18:14:10 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@71454b9d
-2026-10-04 18:14:10 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-10-04 18:14:10 INFO  org.soso.ledger.LedgerApplication - Started LedgerApplication in 3.941 seconds (process running for 4.861)
-2026-10-04 18:38:26 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-10-04 18:38:26 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-10-04 18:38:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-10-04 18:38:26 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-10-04 18:38:32 INFO  org.soso.ledger.LedgerApplication - Starting LedgerApplication using Java 17.0.20.1 with PID 13752 (D:\so-project\ledger\build\classes\java\main started by qw100 in D:\so-project\ledger)
-2026-10-04 18:38:32 DEBUG org.soso.ledger.LedgerApplication - Running with Spring Boot v4.0.8, Spring v7.0.9
-2026-10-04 18:38:32 INFO  org.soso.ledger.LedgerApplication - The following 1 profile is active: "dev"
-2026-10-04 18:38:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-04 18:38:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-04 18:38:33 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2026-10-04 18:38:34 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-10-04 18:38:34 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-04 18:38:34 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-10-04 18:38:34 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1534 ms
-2026-10-04 18:38:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-04 18:38:35 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@150f41b9
-2026-10-04 18:38:35 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-04 18:38:35 INFO  o.s.b.w.a.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2026-10-04 18:38:35 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c6c24f
-2026-10-04 18:38:35 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-10-04 18:38:35 INFO  org.soso.ledger.LedgerApplication - Started LedgerApplication in 3.769 seconds (process running for 4.481)
-2026-10-04 18:44:28 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2026-10-04 18:44:28 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
-2026-10-04 18:44:28 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 109 ms
-2026-10-04 18:44:56 DEBUG o.s.l.mapper.UserMapper.selectList - ==>  Preparing: SELECT id,username,password_hash,nickname,created_at,updated_at FROM users WHERE (username = ?)
-2026-10-04 18:44:56 DEBUG o.s.l.mapper.UserMapper.selectList - ==> Parameters: 敖诗悦(String)
-2026-10-04 18:44:56 DEBUG o.s.l.mapper.UserMapper.selectList - <==      Total: 0
-2026-10-04 18:44:56 DEBUG o.s.ledger.mapper.UserMapper.insert - ==>  Preparing: INSERT INTO users ( username, password_hash, nickname ) VALUES ( ?, ?, ? )
-2026-10-04 18:44:56 DEBUG o.s.ledger.mapper.UserMapper.insert - ==> Parameters: 敖诗悦(String), $2a$10$/6QsNB6rnzaGxXHQrupySeJz..niTUruVVLnrRAkas0KAvN1aRonu(String), No10(String)
-2026-10-04 18:44:56 DEBUG o.s.ledger.mapper.UserMapper.insert - <==    Updates: 1
-2026-10-04 18:44:56 INFO  org.soso.ledger.service.AuthService - 用户注册成功：userId=26, username=敖诗悦
-2026-10-04 18:48:04 INFO  o.soso.ledger.LedgerApplicationTests - Starting LedgerApplicationTests using Java 17.0.20.1 with PID 19804 (started by qw100 in D:\so-project\ledger)
-2026-10-04 18:48:04 DEBUG o.soso.ledger.LedgerApplicationTests - Running with Spring Boot v4.0.8, Spring v7.0.9
-2026-10-04 18:48:04 INFO  o.soso.ledger.LedgerApplicationTests - The following 1 profile is active: "dev"
-2026-10-04 18:48:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-04 18:48:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-04 18:48:05 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
-2026-10-04 18:48:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-04 18:48:07 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d5e3f55
-2026-10-04 18:48:07 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-04 18:48:08 INFO  o.s.b.w.a.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2026-10-04 18:48:08 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@2d3ef181
-2026-10-04 18:48:08 INFO  o.soso.ledger.LedgerApplicationTests - Started LedgerApplicationTests in 4.233 seconds (process running for 6.744)
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - ==>  Preparing: INSERT INTO users ( username, password_hash, nickname ) VALUES ( ?, ?, ? )
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - ==> Parameters: test_1791110889509(String), 123456(String), test_1791110889509(String)
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - <==    Updates: 1
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,username,password_hash,nickname,created_at,updated_at FROM users WHERE id=?
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectById - ==> Parameters: 27(Long)
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectById - <==      Total: 1
-2026-10-04 18:48:09 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.soso.ledger.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-04 18:48:09 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.soso.ledger.LedgerApplication for test class org.soso.ledger.mapper.UserMapperTest
-2026-10-04 18:48:09 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.soso.ledger.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-2026-10-04 18:48:09 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.soso.ledger.LedgerApplication for test class org.soso.ledger.mapper.UserMapperTest
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - ==>  Preparing: INSERT INTO users ( username, password_hash ) VALUES ( ?, ? )
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - ==> Parameters: test_1791110889727(String), dummy-hash(String)
-2026-10-04 18:48:09 DEBUG o.s.ledger.mapper.UserMapper.insert - <==    Updates: 1
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectList - ==>  Preparing: SELECT id,username,password_hash,nickname,created_at,updated_at FROM users WHERE (username = ?)
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectList - ==> Parameters: test_1791110889727(String)
-2026-10-04 18:48:09 DEBUG o.s.l.mapper.UserMapper.selectList - <==      Total: 1
-2026-10-04 18:48:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-10-04 18:48:09 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-10-04 19:04:42 INFO  o.s.boot.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
-2026-10-04 19:04:42 INFO  o.s.boot.tomcat.GracefulShutdown - Graceful shutdown complete
-2026-10-04 19:04:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2026-10-04 19:04:42 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2026-10-04 20:08:59 INFO  org.soso.ledger.LedgerApplication - Starting LedgerApplication using Java 17.0.20.1 with PID 19260 (D:\so-project\ledger\ledger\build\classes\java\main started by qw100 in D:\so-project\ledger\ledger)
-2026-10-04 20:08:59 DEBUG org.soso.ledger.LedgerApplication - Running with Spring Boot v4.0.8, Spring v7.0.9
-2026-10-04 20:08:59 INFO  org.soso.ledger.LedgerApplication - The following 1 profile is active: "dev"
-2026-10-04 20:09:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
-2026-10-04 20:09:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
-2026-10-04 20:09:00 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 16 ms. Found 0 Redis repository interfaces.
-2026-10-04 20:09:01 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
-2026-10-04 20:09:01 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2026-10-04 20:09:01 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/11.0.24]
-2026-10-04 20:09:01 INFO  o.s.b.w.c.s.WebApplicationContextInitializer - Root WebApplicationContext: initialization completed in 1763 ms
-2026-10-04 20:09:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2026-10-04 20:09:02 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3dd2b9c1
-2026-10-04 20:09:02 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2026-10-04 20:09:03 INFO  o.s.b.w.a.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
-2026-10-04 20:09:03 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.boot.web.server.servlet.context.AnnotationConfigServletWebServerApplicationContext@49c6c24f
-2026-10-04 20:09:04 INFO  o.s.boot.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
-2026-10-04 20:09:04 INFO  org.soso.ledger.LedgerApplication - Started LedgerApplication in 4.846 seconds (process running for 5.921)
-2026-10-04 23:22:42 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m7s144ms963µs700ns).
+2026-10-09 20:40:14 INFO  o.soso.ledger.LedgerApplicationTests - Starting LedgerApplicationTests using Java 17.0.20.1 with PID 19768 (started by qw100 in D:\so-project\ledger\ledger)
+2026-10-09 20:40:14 DEBUG o.soso.ledger.LedgerApplicationTests - Running with Spring Boot v4.0.8, Spring v7.0.9
+2026-10-09 20:40:14 INFO  o.soso.ledger.LedgerApplicationTests - The following 1 profile is active: "dev"
+2026-10-09 20:40:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2026-10-09 20:40:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2026-10-09 20:40:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 20 ms. Found 0 Redis repository interfaces.
+2026-10-09 20:40:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-10-09 20:40:16 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53d9af1
+2026-10-09 20:40:16 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-10-09 20:40:17 INFO  o.s.b.w.a.WelcomePageHandlerMapping - Adding welcome page: class path resource [static/index.html]
+2026-10-09 20:40:17 INFO  c.b.m.e.s.MybatisPlusApplicationContextAware - Register ApplicationContext instances org.springframework.web.context.support.GenericWebApplicationContext@2d3ef181
+2026-10-09 20:40:18 INFO  o.soso.ledger.LedgerApplicationTests - Started LedgerApplicationTests in 4.452 seconds (process running for 6.25)
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - ==>  Preparing: INSERT INTO users ( username, password_hash, nickname ) VALUES ( ?, ?, ? )
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - ==> Parameters: test_1791549619068(String), 123456(String), test_1791549619068(String)
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - <==    Updates: 1
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectById - ==>  Preparing: SELECT id,username,password_hash,nickname,created_at,updated_at FROM users WHERE id=?
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectById - ==> Parameters: 29(Long)
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectById - <==      Total: 1
+2026-10-09 20:40:19 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.soso.ledger.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-09 20:40:19 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.soso.ledger.LedgerApplication for test class org.soso.ledger.mapper.UserMapperTest
+2026-10-09 20:40:19 INFO  o.s.t.c.s.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [org.soso.ledger.mapper.UserMapperTest]: UserMapperTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-10-09 20:40:19 INFO  o.s.b.t.c.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration org.soso.ledger.LedgerApplication for test class org.soso.ledger.mapper.UserMapperTest
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - ==>  Preparing: INSERT INTO users ( username, password_hash ) VALUES ( ?, ? )
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - ==> Parameters: test_1791549619360(String), dummy-hash(String)
+2026-10-09 20:40:19 DEBUG o.s.ledger.mapper.UserMapper.insert - <==    Updates: 1
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectList - ==>  Preparing: SELECT id,username,password_hash,nickname,created_at,updated_at FROM users WHERE (username = ?)
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectList - ==> Parameters: test_1791549619360(String)
+2026-10-09 20:40:19 DEBUG o.s.l.mapper.UserMapper.selectList - <==      Total: 1
+2026-10-09 20:40:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-10-09 20:40:19 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

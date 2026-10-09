@@ -46,3 +46,14 @@ dependencies {
 tasks.named('test') {
 	useJUnitPlatform()
 }
+
+// ========== 新增：给 bootRun 配置 JVM 内存 ==========
+bootRun {
+	jvmArgs = [
+			"-Xms512m",                       // 初始堆内存 512MB
+			"-Xmx1024m",                      // 最大堆内存 1GB
+			"-XX:MaxMetaspaceSize=256m",      // 元空间上限 256MB
+			"-XX:+HeapDumpOnOutOfMemoryError",// OOM 时自动 dump
+			"-XX:HeapDumpPath=./dumps"        // dump 文件保存路径
+	]
+}
