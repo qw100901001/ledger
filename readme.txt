@@ -1,6 +1,6 @@
 # 个人记账本系统（Full-Stack Expense Tracker）
 
-一个基于 SpringBoot + Vue3 的个人记账本全栈项目，支持多账本管理、收支记录、分类统计与可视化报表。
+一个基于 SpringBoot + Vue3 的个人记账本全栈项目，支持多账本管理、收支记录、ci/cd部署、ai tool+skill。
 
 ## 技术栈
 
